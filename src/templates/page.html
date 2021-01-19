@@ -1,0 +1,24 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!-- begin container -->
+<div class="container">
+    <!-- begin count -->
+    <form onsubmit="check(); return false" class="count-form">
+        <input name="cold-water" id="cw-tariff" required placeholder="97.89" type="tel" value ="97.89"/>
+        <input name="cold-water" id="cw-cur" required placeholder="" type="tel" value ="3"/>
+        <input name="cold-water" id="cw-pre" required placeholder="" type="tel" value ="2"/>
+        <input name="cold-water" id="cw-usage" placeholder="" type="tel"/>
+        <input name="cold-water" id="cw-charge" placeholder="" type="tel"/>
+        <button name="cold-water" id="next" type="button">Start</button>
+      <p id="score"></p>
+
+    </form>
+    <!-- end count -->
+</div>
+<!-- end container -->
+
+{% endblock %}
