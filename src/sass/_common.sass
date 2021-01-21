@@ -30,9 +30,43 @@ body
   max-width: 940px
   text-align: center
 
+.label
+  // float: left
+  // width: 10%
+  text-align: left
+
 input
-  width: 10%
-  border-color: black 1px
+  width: 100%
+  display: inline
+  background: inherit
+  text-align: center
+  font-size: 18px
+
 
 .count-form
   padding-top: 100px
+
+table
+  margin: 0px auto 50px auto
+  width: 50%
+  +r(600)
+    width: 100%
+
+
+table, th, td
+  border: 1px solid black
+  vertical-align: middle
+  padding: 1px
+  font-weight: bold
+  font-style: italic
+  font-size: 16px
+
+.verbs td
+  +r(530)
+    font-size: 12px
+
+table tr:nth-child(odd)
+  background: #f1f9ff
+
+table tr:nth-child(even)
+  background: #E5E5E5s

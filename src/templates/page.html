@@ -1,3 +1,4 @@
+
 ---
 title: Index page
 ---
@@ -8,13 +9,48 @@ title: Index page
 <div class="container">
     <!-- begin count -->
     <form onsubmit="check(); return false" class="count-form">
-        <input name="cold-water" id="cw-tariff" required placeholder="97.89" type="tel" value ="97.89"/>
-        <input name="cold-water" id="cw-cur" required placeholder="" type="tel" value ="3"/>
-        <input name="cold-water" id="cw-pre" required placeholder="" type="tel" value ="2"/>
-        <input name="cold-water" id="cw-usage" placeholder="" type="tel"/>
-        <input name="cold-water" id="cw-charge" placeholder="" type="tel"/>
+
+
+
+      <table>
+
+          <tr>
+
+            <th></th>
+            <th>Тариф</th>
+            <th>Поточні</th>
+            <th>Попередні</th>
+            <th>Різниця</th>
+            <th>Разом</th>
+          </tr>
+          <tr>
+            <th>Холодная вода</th>
+            <th><input name="cold-water" id="cw-tariff" required placeholder="" type="tel" value ="21.756"/></th>
+            <th><input name="cold-water" id="cw-cur" required placeholder="" type="tel" value =""/></th>
+            <th ><input name="cold-water" id="cw-pre" required placeholder="" type="tel" value =""/></th>
+            <th><span id="cw-usage"></span></th>
+            <th><span id="cw-sum"></span></th>
+          </tr>
+          <tr>
+            <th>Гарячая вода</th>
+            <th><input name="hot-water" id="hw-tariff" required placeholder="" type="tel" value ="97.89"/></th>
+            <th><input name="hot-water" id="hw-cur" required placeholder="" type="tel" value =""/></th>
+            <th ><input name="hot-water" id="hw-pre" required placeholder="" type="tel" value =""/></th>
+            <th><span id="hw-usage"></span></th>
+            <th><span id="hw-sum"></span></th>
+          </tr>
+          <tr>
+            <th>Отвод г.в.</th>
+            <th><input name="out-water" id="ow-tariff" required placeholder="" type="tel" value ="10.272"/></th>
+            <th><input name="out-water" id="ow-cur" required placeholder="" type="tel" value =""/></th>
+            <th ><input name="out-water" id="ow-pre" required placeholder="" type="tel" value =""/></th>
+            <th><span id="ow-usage"></span></th>
+            <th><span id="ow-sum"></span></th>
+          </tr>
+
+        </table>
         <button name="cold-water" id="next" type="button">Start</button>
-      <p id="score"></p>
+
 
     </form>
     <!-- end count -->
