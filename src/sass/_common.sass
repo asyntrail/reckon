@@ -38,22 +38,25 @@ body
 input
   width: 100%
   display: inline
-  // background: inherit
+  background: inherit
   text-align: center
   font-style: italic
   font-size: 16px
   font-weight: bold
-
-
-.count-form
-  padding-top: 50px
-
-table
-  margin: 0px auto 50px auto
-  width: 50%
   +r(600)
-    width: 100%
+    font-size: 12px
 
+.second-table
+  width: 70px
+
+.person-color
+    background: #cfffcf
+
+.general-color
+    background: #ffffb3
+
+// .count-form
+//   padding-top: 50px
 
 table, th, td
   border: 1px solid black
@@ -61,14 +64,37 @@ table, th, td
   padding: 1px
   font-weight: bold
   font-style: italic
-  font-size: 16px
 
-.verbs td
-  +r(530)
+
+table
+  margin: 30px auto 30px auto
+  width: 50%
+  +r(600)
+    width: 98%
     font-size: 12px
 
-table tr:nth-child(odd)
-  background: #f1f9ff
 
-table tr:nth-child(even)
-  background: #E5E5E5s
+
+#edi
+  background: yellow
+
+.form__btn
+  display: inline-block
+  border-radius: 10px
+  border: 2px solid green
+  background: #fff
+  text-decoration: none
+  padding: 10px 40px 10px 40px
+  font-weight: bold
+  border-radius: 30px
+  border: 2px solid #ff7f28
+  margin: 10px
+  &:hover
+    background: #ff7f28
+    color: white
+    border: 2px solid #fff
+    cursor: pointer
+
+
+
+
